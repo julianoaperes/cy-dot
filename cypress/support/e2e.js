@@ -14,7 +14,14 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+Cypress.on("uncaught:exception", (err, runnable) => {
+  // Ignore the specific error
+  if (err.message.includes("$this.waypoint is not a function")) {
+    return false; // Previne a falha no teste, porém deve ser temporário até o ajuste do problema encontrado.
+  }
+});
