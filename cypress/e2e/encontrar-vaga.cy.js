@@ -1,5 +1,5 @@
-describe("Cadastrar à Vaga", () => {
-  it.only("Acessar o site da empresa Dot Digital Group e encontrar uma vaga", () => {
+describe("Encontrar uma vaga", () => {
+  it("Acessar o site da empresa Dot Digital Group e encontrar uma vaga", () => {
     cy.visit("https://dotgroup.com.br/");
     cy.contains("a", "Vagas").should("be.visible").click(); // Clica no menu "Vaga"
 
