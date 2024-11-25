@@ -1,0 +1,7 @@
+{
+  "name": "dot-digital-group",
+  "packageManager": "yarn@4.5.2",
+  "dependencies": {
+    "cypress": "13.15.0"
+  }
+}
