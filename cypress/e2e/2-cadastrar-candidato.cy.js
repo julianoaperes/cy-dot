@@ -1,4 +1,4 @@
-describe("Cadastrar à Vaga", () => {
+describe("Cadastrar um candidato", () => {
   it("Efetuar cadastro", () => {
     cy.visit(
       "https://dotgroup.enlizt.me/vagas/21c140d0-84cd-11ef-b4a9-a97485d18d3f/"
