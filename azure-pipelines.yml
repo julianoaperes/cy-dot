@@ -19,9 +19,3 @@ steps:
     yarn install
     yarn cypress open build
   displayName: 'yarn install and build'
-
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/test-results/*.xml'
-  displayName: "Publish Test Results"
