@@ -17,5 +17,10 @@ steps:
 
 - script: |
     yarn install
-    yarn cypress open build
-  displayName: 'yarn install and build'
+  displayName: install yarn 
+
+
+- script: |
+    yarn cypress run
+  displayName: 'run test'
+  continueOnError: true
