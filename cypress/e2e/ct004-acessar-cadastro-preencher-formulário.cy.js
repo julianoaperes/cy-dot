@@ -1,4 +1,4 @@
-describe("Acessar cadastro iniciado, clicar no botão Preencher formulário e seguir com o processo.", () => {
+describe("Acessar cadastro iniciado, clicar no botão Preencher formulário e seguir com o processo até o final.", () => {
   it("Inserir e-mail já cadastrado", () => {
     // Localizando a vaga desejada no site
     cy.visit(
